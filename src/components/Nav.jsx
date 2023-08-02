@@ -6,6 +6,7 @@ import {
   AiOutlineHome,
   AiOutlineUser,
 } from "react-icons/ai";
+import {FaBriefcase, FaCode, FaCogs, FaComment, FaPhone, FaProjectDiagram, FaQuoteLeft, FaRProject, FaStar} from 'react-icons/fa'
 const Nav = () => {
   const [active, setActive] = useState("#");
   return (
@@ -32,7 +33,15 @@ const Nav = () => {
         className={active === "skills" ? "active" : null}
       >
         {" "}
-        <AiOutlineBook />
+        <FaCode /> 
+      </a>
+      <a
+        href="#services"
+        onClick={() => setActive("services")}
+        className={active === "services" ? "active" : null}
+      >
+        {" "}
+        <FaBriefcase /> 
       </a>
       <a
         href="#projects"
@@ -40,7 +49,15 @@ const Nav = () => {
         className={active === "projects" ? "active" : null}
       >
         {" "}
-        <AiOutlineBook />
+        <FaProjectDiagram />
+      </a>
+      <a
+        href="#testimonials"
+        onClick={() => setActive("testimonial")}
+        className={active === "testimonial" ? "active" : null}
+      >
+        {" "}
+        <FaQuoteLeft/>
       </a>
       <a
         href="#contact"
@@ -48,7 +65,7 @@ const Nav = () => {
         className={active === "contact" ? "active" : null}
       >
         {" "}
-        <AiOutlineContacts />
+        <FaPhone />
       </a>
     </nav>
   );

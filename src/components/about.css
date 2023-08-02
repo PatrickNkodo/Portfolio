@@ -1,11 +1,11 @@
 .about__container {
   display: grid;
   grid-template-columns: 40% 50%;
-  /* background-color: red; */
   gap: 10%;
 }
 .about__me {
   aspect-ratio: 1/1;
+  overflow: hidden;
   border-radius: 2rem;
   display: grid;
   place-items: center;
@@ -30,6 +30,9 @@
   text-align: center;
   transition: var(--transition);
 }
+.about__card small{
+  line-height:.3 !important;
+}
 .about__card:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
@@ -44,13 +47,29 @@
   margin-bottom: 1rem;
 }
 .about__card small {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: var(--color-light);
 }
 .about__cards {
   display: flex;
   gap: 3%;
   justify-content: space-evenly;
+}
+.container>a{
+  margin-top: .5rem;
+}
+.container>h2{
+  margin: 2rem 0 1rem;
+}
+.container>p{
+  color: var(--color-light);
+  margin:0rem 0;
+  font-size: .9rem;
+}
+.about__content h5{
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom:1rem;
 }
 .about__content p {
   margin: 2rem 0 2.6rem;

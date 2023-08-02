@@ -30,3 +30,12 @@ nav a.active {
   color: var(--color-white);
   font-weight: 600;
 }
+@media screen and (max-width:576px) {
+  nav{
+    padding: .5rem 1rem;
+    transform: translateX(-9rem);
+  }
+  nav a{
+    padding: .5rem;
+  }
+}

@@ -20,13 +20,16 @@ footer a {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
-.footer__socials {
+footer .socials {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
+}
+footer .socials svg{
+  font-size: 25px;
 }
 .footer__socials a {
   background-color: var(--color-bg);

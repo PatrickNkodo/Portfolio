@@ -2,14 +2,14 @@ import React from "react";
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 const Socials = () => {
   return (
-    <div className="header__socials">
-      <a href="linkedin" target="_blank">
+    <div className="socials">
+      <a href="https://www.linkedin.com/in/essama-patrick-071806227/" target="_blank">
         <BsLinkedin />
       </a>
-      <a href="githum" target="_blank">
+      <a href="https://github.com/PatrickNkodo" target="_blank">
         <BsGithub />
       </a>
-      <a href="twitter" target="_blank">
+      <a href="https://twitter.com/EssamaPatrick2" target="_blank">
         <BsTwitter />
       </a>
     </div>

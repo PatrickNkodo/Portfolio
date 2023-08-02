@@ -25,6 +25,7 @@
   width: 80%;
   margin: 0.8rem auto 1.5rem;
 }
+.client__review svg{transform: translateY(-5px);}
 @media screen and (max-width: 768px) {
   .testimonials__container {
     width: var(--container-width-sm);

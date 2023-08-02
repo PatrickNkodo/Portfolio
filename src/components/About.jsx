@@ -1,5 +1,5 @@
 import React from "react";
-import me from "../assets/IMG_20220526_170955_9.jpg";
+import me from "../assets/IMG_20220413_084300_1.jpg";
 import { FaAward } from "react-icons/fa";
 import "./about.css";
 const About = () => {
@@ -8,38 +8,44 @@ const About = () => {
       <h5>Get to know</h5>
       <h2>About me</h2>
       <div className="container about__container">
-        <div className="about__me">
+       <div className="">
+       <div className="about__me">
           <div className="about__me-image">
             <img src={me} alt="" />
           </div>
         </div>
+       </div>
         <div className="about__content">
+            <h5>How I acquire my skills</h5>
           <div className="about__cards">
             <div className="about__card">
               <article className="">
                 {<FaAward className="about__icon" />}
-                <h5>Experience</h5>
-                <small>2Months internhip</small>
+                <h5>Internhip</h5>
+                <small>I constanlty look for internships. The last internship was for a period of 2 months
+                  at SODECAO, precisely in the IT unit of the enterprise.
+                </small>
               </article>
             </div>
             <div className="about__card">
               <article className="">
                 {<FaAward className="about__icon" />}
-                <h5>Projects</h5>
-                <small>2Months internhip</small>
+                <h5>Personal Research</h5>
+                <small>I am very active personally, as to what concerns learning new skills</small>
               </article>
             </div>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt amet
-            unde exercitationem. Incidunt, sit ut voluptas enim at voluptatem,
-            sequi ipsum beatae aspernatur commodi culpa harum. Corporis,
-            quisquam, tempore aspernatur soluta, sed accusamus excepturi eaque
-            praesentium aliquid ad asperiores fuga.
-          </p>
-          <button className="btn btn-primary">Lets talk</button>
         </div>
       </div>
+        <div className="container">
+        <h2>Brief description</h2>
+        <p>
+          I am a highly motivated person,  with passion for software 
+          development technologies. I like practicing to learn, that's how I progress.
+          Do not hesitate to contact me for a new project, I would be glad to join you.
+          </p>
+          <a href="#contact" className="btn btn-primary">Lets talk</a>
+        </div>
     </section>
   );
 };

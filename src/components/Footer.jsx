@@ -1,5 +1,6 @@
 import React from "react";
 import "./footer.css";
+import Socials from "./Socials";
 const Footer = () => {
   return (
     <footer>
@@ -26,11 +27,7 @@ const Footer = () => {
           <a href="#contact">Contact</a>
         </li>
       </ul>
-      <div className="footer__socials">
-        <a href="https://github.com/PatrickNkodo/">Facebook</a>
-        <a href="https://twitter.com">Twitter</a>
-        <a href="https://facebook.com">Github</a>
-      </div>
+        <Socials/>
       <div className="footer__copyright">
         <small>&copy; My Portfolio. All rights reserved</small>
       </div>

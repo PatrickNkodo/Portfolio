@@ -9,43 +9,10 @@ const Projects = () => {
       <div className="container project__container">
         <article className="project__item">
           <div className="project__item-image">
-            <h3>Project title</h3>
+            <h3>Poetry writing site</h3>
             <div className="project__item-cta">
               <img src={img} alt="" />
-              <a href="github.com" target="_blank" className="btn">
-                Take a view
-              </a>
-            </div>
-          </div>
-        </article>
-        <article className="project__item">
-          <div className="project__item-image">
-            <h3>Project title</h3>
-            <div className="project__item-cta">
-              <img src={img} alt="" />
-              <a href="github.com" target="_blank" className="btn">
-                Take a view
-              </a>
-            </div>
-          </div>
-        </article>
-        <article className="project__item">
-          <div className="project__item-image">
-            <h3>Project title</h3>
-            <div className="project__item-cta">
-              <img src={img} alt="" />
-              <a href="github.com" target="_blank" className="btn">
-                Take a view
-              </a>
-            </div>
-          </div>
-        </article>
-        <article className="project__item">
-          <div className="project__item-image">
-            <h3>Project title</h3>
-            <div className="project__item-cta">
-              <img src={img} alt="" />
-              <a href="github.com" target="_blank" className="btn">
+              <a href="https://mapoesie.netlify.app" target="_blank" className="btn">
                 Take a view
               </a>
             </div>
