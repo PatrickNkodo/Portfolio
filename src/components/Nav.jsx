@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./nav.css";
 import {
   AiOutlineBook,
@@ -6,9 +6,48 @@ import {
   AiOutlineHome,
   AiOutlineUser,
 } from "react-icons/ai";
-import {FaBriefcase, FaCode, FaCogs, FaComment, FaPhone, FaProjectDiagram, FaQuoteLeft, FaRProject, FaStar} from 'react-icons/fa'
+import {
+  FaBriefcase,
+  FaCode,
+  FaCogs,
+  FaComment,
+  FaPhone,
+  FaProjectDiagram,
+  FaQuoteLeft,
+  FaRProject,
+  FaStar,
+} from "react-icons/fa";
+
 const Nav = () => {
   const [active, setActive] = useState("#");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section");
+      const scrollPosition = window.pageYOffset;
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (
+          scrollPosition >= sectionTop - sectionHeight * 0.25 &&
+          scrollPosition <
+            sectionTop + sectionHeight - sectionHeight * 0.25 &&
+          active !== section.id
+        ) {
+          setActive(section.id);
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [active]);
+
   return (
     <nav>
       <a
@@ -33,7 +72,7 @@ const Nav = () => {
         className={active === "skills" ? "active" : null}
       >
         {" "}
-        <FaCode /> 
+        <FaCode />
       </a>
       <a
         href="#services"
@@ -41,7 +80,7 @@ const Nav = () => {
         className={active === "services" ? "active" : null}
       >
         {" "}
-        <FaBriefcase /> 
+        <FaBriefcase />
       </a>
       <a
         href="#projects"
@@ -53,11 +92,11 @@ const Nav = () => {
       </a>
       <a
         href="#testimonials"
-        onClick={() => setActive("testimonial")}
-        className={active === "testimonial" ? "active" : null}
+        onClick={() => setActive("testimonials")}
+        className={active === "testimonials" ? "active" : null}
       >
         {" "}
-        <FaQuoteLeft/>
+        <FaQuoteLeft />
       </a>
       <a
         href="#contact"

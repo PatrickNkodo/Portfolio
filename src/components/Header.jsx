@@ -7,7 +7,7 @@ import "./header.css";
 
 const Header = () => {
   return (
-    <header>
+    <section id="#" className="header">
       <div className="container header__container">
         <div className="header__presentation">
           <div className="">
@@ -30,7 +30,7 @@ const Header = () => {
         Scroll Down
       </a>
       <Socials />
-    </header>
+    </section>
   );
 };
 

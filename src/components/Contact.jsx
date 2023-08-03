@@ -1,30 +1,37 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import {
   RiMessengerFill,
   RiMailSendFill,
   RiWhatsappFill,
 } from "react-icons/ri";
+import emailjs from 'emailjs-com'
 import "./contact.css";
+
 const Contact = () => {
   const form = useRef();
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-  //   emailjs
-  //     .sendForm(
-  //       "YOUR_SERVICE_ID",
-  //       "YOUR_TEMPLATE_ID",
-  //       form.current,
-  //       "YOUR_PUBLIC_KEY"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  // };
+  const [showModal, setShowModal] = useState(false);
+  const [modalText,setModalText]=useState("")
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_ovufgi7",
+        "template_ug6nmje",
+        form.current,
+        "nztylaIKmNW3J0Ray"
+      )
+      .then(
+        (result) => {
+         setModalText("Message sent successfully");
+         setShowModal(true);
+        },
+        (error) => {
+          setModalText("Sorry, an error occured");
+        }
+      );
+  };
+
   return (
     <section id="contact">
       <h5>Contact me for more information</h5>
@@ -35,24 +42,24 @@ const Contact = () => {
             <RiMailSendFill className="contact__option-icon" />
             <h4>Email</h4>
             <h5>patrick.doberiner@gmail.com</h5>
-            <a href="mailto:patrick.doberiner@gmail.com">Send a message</a>
+            <a href="mailto:patrick.doberiner@gmail.com" target="_blank">Send a message</a>
           </article>
           <article className="contact__option">
             <RiMessengerFill className="contact__option-icon" />
-            <h4>Messenger</h4>
+            <h4>Facebook</h4>
             <h5>Patrick Nkodo</h5>
-            <a href="https://m.me/patricknkodo">Write me on messenger</a>
+            <a href="https://www.facebook.com/profile.php?id=100090584906271" target="_blank">Contact me</a>
           </article>
           <article className="contact__option">
             <RiWhatsappFill className="contact__option-icon" />
             <h4>Whatsapp</h4>
             <h5>+237696950600</h5>
-            <a href="whatsapp.com/send?phone=+237696950600">
-              Send Whatsapp message
+            <a href="https://wa.me/237696950600/?text=Message from portfolio" target="_blank">
+              Send a message
             </a>
           </article>
         </div>
-        <form action="" ref={form}>
+        <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
             name="name"
@@ -72,6 +79,12 @@ const Contact = () => {
             Send message
           </button>
         </form>
+        {showModal && (
+          <div className="modal">
+            <h5>{modalText}</h5>
+            <button onClick={() => setShowModal(false)}>Close</button>
+          </div>
+        )}
       </div>
     </section>
   );
