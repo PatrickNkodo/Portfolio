@@ -5,10 +5,10 @@ import "./about.css";
 const About = () => {
   return (
     <section id="about">
-      <h5>Get to know</h5>
-      <h2>About me</h2>
+      <h5 data-aos="flip-left"  data-aos-duration="1000">Get to know</h5>
+      <h2 data-aos="fade-up"  data-aos-duration="2000">About me</h2>
       <div className="container about__container">
-       <div className="">
+       <div className="" data-aos="fade-up"  data-aos-duration="2000">
        <div className="about__me">
           <div className="about__me-image">
             <img src={me} alt="" />
@@ -18,7 +18,7 @@ const About = () => {
         <div className="about__content">
             <h5>How I acquire my skills</h5>
           <div className="about__cards">
-            <div className="about__card">
+            <div className="about__card" data-aos="fade-right"  data-aos-duration="1000">
               <article className="">
                 {<FaAward className="about__icon" />}
                 <h5>Internhip</h5>
@@ -27,7 +27,7 @@ const About = () => {
                 </small>
               </article>
             </div>
-            <div className="about__card">
+            <div className="about__card" data-aos="fade-left"  data-aos-duration="1000">
               <article className="">
                 {<FaAward className="about__icon" />}
                 <h5>Personal Research</h5>
@@ -37,7 +37,7 @@ const About = () => {
           </div>
         </div>
       </div>
-        <div className="container">
+        <div className="container" data-aos="fade-right"  data-aos-duration="1000">
         <h2>Brief description</h2>
         <p>
           I am a highly motivated person,  with passion for software 

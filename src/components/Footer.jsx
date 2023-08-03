@@ -3,7 +3,7 @@ import "./footer.css";
 import Socials from "./Socials";
 const Footer = () => {
   return (
-    <footer>
+    <footer data-aos="fade-down"  data-aos-duration="1000">
       <a href="#" className="footer__logo">
         Portfolio
       </a>

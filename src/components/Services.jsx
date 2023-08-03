@@ -4,10 +4,10 @@ import "./services.css";
 const Services = () => {
   return (
     <section id="services">
-      <h5>What I can do for you</h5>
-      <h2>Services</h2>
+      <h5 data-aos="flip-left"  data-aos-duration="1000">What I can do for you</h5>
+      <h2 data-aos="fade-up"  data-aos-duration="2000">Services</h2>
       <div className="container services__container">
-        <article className="service">
+        <article className="service" data-aos="fade-left"  data-aos-duration="1000">
           <div className="service__head">
             <h3>Frontend Development</h3>
           </div>
@@ -30,7 +30,7 @@ const Services = () => {
             </li>
           </ul>
         </article>
-        <article className="service">
+        <article className="service" data-aos="fade-right"  data-aos-duration="1000">
           <div className="service__head">
             <h3>Backend Development</h3>
           </div>

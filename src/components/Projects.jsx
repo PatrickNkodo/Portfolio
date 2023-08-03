@@ -4,9 +4,9 @@ import "./projects.css";
 const Projects = () => {
   return (
     <section id="projects">
-      <h5>My Recent Work</h5>
-      <h2>Projects</h2>
-      <div className="container project__container">
+      <h5 data-aos="flip-left"  data-aos-duration="1000">My Recent Work</h5>
+      <h2 data-aos="fade-up"  data-aos-duration="2000">Projects</h2>
+      <div className="container project__container" data-aos="fade-up"  data-aos-duration="1000">
         <article className="project__item">
           <div className="project__item-image">
             <h3>Poetry writing site</h3>

@@ -10,9 +10,10 @@ import { FaQuoteLeft } from "react-icons/fa";
 const Testimonials = () => {
   return (
     <section id="testimonials">
-      <h5>What they sayabout me</h5>
-      <h2>Testimonials</h2>
+      <h5 data-aos="flip-left"  data-aos-duration="1000">What they sayabout me</h5>
+      <h2 data-aos="fade-up"  data-aos-duration="2000">Testimonials</h2>
       <Swiper
+        data-aos="flip-up"  data-aos-duration="2500"
         className="container testimonials__container"
         spaceBetween={50}
         slidesPerView={1}
