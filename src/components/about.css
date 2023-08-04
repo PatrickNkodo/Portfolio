@@ -47,7 +47,7 @@
   margin-bottom: 1rem;
 }
 .about__card small {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--color-light);
 }
 .about__cards {

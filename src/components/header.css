@@ -1,5 +1,5 @@
 section.header {
-  height: 100vh;
+  /* height: 100vh; */
   margin-top:0;
   overflow: hidden;
 }
@@ -28,6 +28,7 @@ section .socials {
   align-items: center;
   gap: 0.8rem;
   position: absolute;
+  font-size: x-large;
   left: 0;
   bottom: 3rem;
 }

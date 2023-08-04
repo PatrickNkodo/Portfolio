@@ -7,8 +7,8 @@ nav {
   position: fixed;
   left: 50%;
   backdrop-filter: blur(50px);
-  bottom: 2rem;
-  transform: translateX(-12rem);
+  bottom: 1rem;
+  transform: translateX(-15rem);
 }
 nav a {
   background: transparent;

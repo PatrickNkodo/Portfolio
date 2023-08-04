@@ -9,8 +9,7 @@ import {
 import {
   FaBriefcase,
   FaCode,
-  FaCogs,
-  FaComment,
+  FaGraduationCap,
   FaPhone,
   FaProjectDiagram,
   FaQuoteLeft,
@@ -65,6 +64,14 @@ const Nav = () => {
       >
         {" "}
         <AiOutlineUser />
+      </a>
+      <a
+        href="#education"
+        onClick={() => setActive("education")}
+        className={active === "education" ? "active" : null}
+      >
+        {" "}
+        <FaGraduationCap/>
       </a>
       <a
         href="#skills"

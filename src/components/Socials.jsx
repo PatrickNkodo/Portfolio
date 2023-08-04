@@ -1,5 +1,5 @@
 import React from "react";
-import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
+import { BsFacebook, BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 const Socials = () => {
   return (
     <div className="socials">
@@ -11,6 +11,9 @@ const Socials = () => {
       </a>
       <a href="https://twitter.com/EssamaPatrick2" target="_blank">
         <BsTwitter />
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100090584906271" target="_blank">
+        <BsFacebook />
       </a>
     </div>
   );
