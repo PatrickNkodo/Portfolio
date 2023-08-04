@@ -11,13 +11,13 @@ const Education = () => {
       <img src={img} alt="" data-aos="fade-left"  data-aos-duration="1000"/>
       </div>
       <article data-aos="fade-right"  data-aos-duration="1000">
-      <div className="service__head"></div>
+    <div className="service__head">How I progressed in school, years after years</div>
       <ul>
-        <li><b>2022 - Present</b> : Completing Bachelor's degree in Software Engineering</li>
+        <li><b>2022 - 2023</b> : Bachelor degree in Software Engineering</li>
         <li><b>2021 - 2022</b> : Higher National Diploma (H.N.D) in Software Engineering</li>
-        <li><b>2018 - 2019</b> : Government Common Entrance (G.C.E) A level</li>
-        <li><b>2017 - 2018</b> : Government Common Entrance (G.C.E) O level</li>
-        <li><b>2012 - 2013</b> : First School Leaving Certificate (F.S.L.C)</li>
+        <li><b>2018 - 2019</b> : General Certificate of Education (G.C.E) A level</li>
+        <li><b>2017 - 2018</b> : General Certificate of Education (G.C.E) O level</li>
+        <li><b>2008 - 2013</b> : First School Leaving Certificate (F.S.L.C)</li>
       </ul>
       </article>
       </div>
