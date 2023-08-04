@@ -11,11 +11,11 @@
   transition: var(--transition);
   height: auto;
 }
-.service:hover {
+/* .service:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
   cursor: default;
-}
+} */
 .service__head {
   background: var(--color-primary);
   padding: 2rem;

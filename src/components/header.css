@@ -1,6 +1,6 @@
 section.header {
   /* height: 100vh; */
-  margin-top:0;
+  margin-top: 0;
   overflow: hidden;
 }
 .header__container {
@@ -12,6 +12,9 @@ section.header {
 .header__presentation h1 {
   width: 75%;
 }
+/* .presentation h4 {
+  text-align: left;
+} */
 .cta {
   margin-top: 2.5rem;
   display: flex;
@@ -60,8 +63,8 @@ section .socials {
   font-size: 0.9rem;
   animation: zoom 1s ease infinite forwards;
 }
-@keyframes zoom{
-  50%{
+@keyframes zoom {
+  50% {
     transform: rotate(90deg) scale(1.1);
   }
 }

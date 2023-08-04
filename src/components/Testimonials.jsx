@@ -10,20 +10,20 @@ import { FaQuoteLeft } from "react-icons/fa";
 const Testimonials = () => {
   return (
     <section id="testimonials">
-      <h5 data-aos="flip-left"  data-aos-duration="1000">What they sayabout me</h5>
-      <h2 data-aos="fade-up"  data-aos-duration="2000">Testimonials</h2>
+      <h5 data-aos="flip-left" data-aos-duration="1000">What they sayabout me</h5>
+      <h2 data-aos="fade-up" data-aos-duration="2000">Testimonials</h2>
       <Swiper
-        data-aos="flip-up"  data-aos-duration="2500"
+        data-aos="flip-up" data-aos-duration="2500"
         className="container testimonials__container"
         spaceBetween={50}
         slidesPerView={1}
-        modules={[Pagination,EffectCards,Autoplay]}
+        modules={[Pagination, EffectCards, Autoplay]}
         effect="card"
         pagination={{ clickable: true }}
         loop={true}
-        autoplay= {{
+        autoplay={{
           delay: 5000,
-          disableOnInteraction: true 
+          disableOnInteraction: true
         }}
       >
         <SwiperSlide className="testimonial">
@@ -32,7 +32,7 @@ const Testimonials = () => {
           </div>
           <h5 className="client__name">Emmanuel Bruno</h5>
           <small className="client__review">
-          <FaQuoteLeft/> Patrick is a passionated of software development. This is noticeable in the way he works hard. I love that.
+            <FaQuoteLeft /> Patrick is a passionated of software development. This is noticeable in the way he works hard. I love that.
           </small>
         </SwiperSlide>
         <SwiperSlide className="testimonial">
@@ -41,7 +41,7 @@ const Testimonials = () => {
           </div>
           <h5 className="client__name">Hongla Dominic </h5>
           <small className="client__review">
-          <FaQuoteLeft/> I like the way he works. And he knows how to adapt in teamwork. That's a grat quality of his.
+            <FaQuoteLeft /> I like the way he works. And he knows how to adapt in teamwork. That's a great quality of his.
           </small>
         </SwiperSlide>
         <SwiperSlide className="testimonial">
@@ -50,8 +50,8 @@ const Testimonials = () => {
           </div>
           <h5 className="client__name">Ebene Marie</h5>
           <small className="client__review">
-          <FaQuoteLeft/> I recommend you Patrick, you will not regret.
-           I trust his determination. He will be the suitable person to complete a team of serious developers
+            <FaQuoteLeft /> I recommend you Patrick, you will not regret.
+            I trust his determination. He will be the suitable person to complete a team of serious developers
           </small>
         </SwiperSlide>
       </Swiper>

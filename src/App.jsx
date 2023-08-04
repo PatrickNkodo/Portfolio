@@ -12,6 +12,8 @@ import Footer from "./components/Footer";
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import Education from "./components/Education";
+import ScrollToTop from "./components/ScrollToTop";
+
 
 function App() {
   useEffect(() => {
@@ -25,13 +27,14 @@ function App() {
       <Nav />
       <Header />
       <About />
-      <Education/>
+      <Education />
       <Skills />
       <Services />
       <Projects />
       <Testimonials />
       <Contact />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }

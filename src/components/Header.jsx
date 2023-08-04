@@ -10,7 +10,7 @@ const Header = () => {
 
   useEffect(() => {
     const options = {
-      strings: ['React Js Developer','Node Js Developer', 'MERN Stack Developer','Software Engineer'],
+      strings: ['React Js Developer', 'Node Js Developer', 'MERN Stack Developer', 'Software Engineer'],
       typeSpeed: 75,
       backSpeed: 20,
       loop: true
@@ -29,9 +29,9 @@ const Header = () => {
           data-aos="fade-left"
           data-aos-duration="2000"
         >
-          <div className="">
+          <div className="presentation">
             <h4>Welcome to my Portfolio!</h4>
-            <h5>I'm</h5>
+            <h5 className="">I'm</h5>
             <h1>Essama Nkodo Patrick</h1>
             <h5 className="text-light">
               and I'm a <b ref={titleRef}></b>

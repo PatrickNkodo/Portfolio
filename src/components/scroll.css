@@ -1,0 +1,31 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--color-bg-variant);
+  color: #fff;
+  padding: 10px 10px 5px;
+  border-radius: 20%;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 24px;
+  animation: zoom1 1s ease-in-out infinite;
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+}
+@keyframes zoom1 {
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .scroll-to-top {
+    bottom: 60px;
+    right: 10px;
+    font-size: smaller;
+  }
+}
